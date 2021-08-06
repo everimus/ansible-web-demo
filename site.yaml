@@ -46,7 +46,7 @@
   tasks:
     - name: connect to intranet webserver
       uri: 
-        url: http://"{{ hostvars[groups['nodes'][0]]['ansible_host'] }}"
+        url: "http://{{ hostvars[groups['nodes'][0]]['ansible_host'] }}"
         status_code: 200
     
     - name: Web Server Details
