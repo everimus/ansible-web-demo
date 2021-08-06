@@ -51,4 +51,4 @@
     
     - name: Web Server Details
       debug: 
-        url: "The Web server has been deployed with Firewall: http://{{ hostvars[groups['nodes'][0]]['ansible_host'] }}"
+        msg: "The Web server has been deployed with Firewall: http://{{ hostvars[groups['nodes'][0]]['ansible_host'] }}"
