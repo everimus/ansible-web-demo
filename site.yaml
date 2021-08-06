@@ -46,5 +46,5 @@
   tasks:
     - name: connect to intranet webserver
       uri: 
-        url: http://node1
+        url: http://"{{groups['nodes'][0]}}"
         status_code: 200
